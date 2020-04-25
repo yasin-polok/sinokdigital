@@ -1,6 +1,3 @@
-/*both-section*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
 body {
   margin: 0;
 }
@@ -60,16 +57,19 @@ body {
 
 .header-text-details #new {
 
-  margin-top: 28px;
-  right: 20px;
+  margin-top: 20px;
+  right: 17px;
   padding: 6px;
   text-align: right;
   color: white;
-  font-size: 12px;
+  font-size: 17px;
   padding-bottom: 50px;
   position: fixed;
-  font-family: 'Indie Flower';
+  font-family: Arial;
 }
+
+/* sticky slide social icon bar */
+
 
 
 
@@ -80,6 +80,7 @@ body {
   float: left;
   margin-top: 23px;
   margin-left: 35px;
+  text-decoration: none;
 }
 
 .button {
@@ -96,6 +97,7 @@ body {
   text-shadow: 5px;
   transition-duration: 0.3s;
   outline: none;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -116,12 +118,63 @@ body {
 }
 
 #bangladesh {
-  text-decoration: underline;
-  color: #f1f1f1;
+  text-decoration: none;
+  color: #d9d9d9;
+  text-shadow: 2px #bfbfbf;
 }
 
 #content-header-text {
   color: #f1f1f1;
+}
+
+/* sticky side icon*/
+
+.icon-bar {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
 }
 
 #myBtn {
@@ -138,4 +191,54 @@ body {
   background: #ddd;
   color: black;
   transition: 0.5s;
+}
+
+/* callout */
+
+.callout {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  max-width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.callout-header {
+  padding: 20px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  color: white;
+}
+
+.callout-container {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+
+.callout-container a {
+  color: #0080ff;
+}
+
+.callout-container a:hover {
+  color: #4dff4d;
+}
+
+.text-design {
+  font-size: 18px;
+  color: yellow;
 }
